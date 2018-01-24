@@ -8,8 +8,6 @@ import TabComponent from './TabComponent';
 const App = () => (
   <MuiThemeProvider>
     <TabComponent/>
-    <MyAwesomeReactComponent />
-    <MyAwesomeReactComponent />
   </MuiThemeProvider>
 );
 

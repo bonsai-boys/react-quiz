@@ -1,6 +1,7 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
+import MyAwesomeReactComponent from './MyAwesomeReactComponent';
 
 const styles = {
   headline: {
@@ -9,6 +10,11 @@ const styles = {
     marginBottom: 12,
     fontWeight: 400,
   },
+  nappi: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+  }
 };
 
 function handleActive(tab) {
@@ -23,10 +29,11 @@ const TabsExampleSimple = () => (
         <p>
           Esimerkki
         </p>
-        <p>
-          You can put any sort of HTML or react component in here. It even keeps the component state!
-        </p>
         <Slider name="slider0" defaultValue={0.5} />
+        <div style={styles.nappi}>
+        dasdasdasddasda<br/>
+        <MyAwesomeReactComponent/>
+        </div>
       </div>
     </Tab>
     <Tab label="Item Two" >
